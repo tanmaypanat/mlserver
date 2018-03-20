@@ -17,7 +17,7 @@ app.get('/startGame/:ninerId', (req, res) => {
       if (!userObj[req.params.ninerId]) {
         dealerTotal = 0;
         userObj[req.params.ninerId] = 0;
-        res.send("You can start the game now!");
+        res.send("You can start the game tomorrow!");
       }else {
         res.send("You can start the game now!");
       }
